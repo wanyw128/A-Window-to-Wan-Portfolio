@@ -6,36 +6,51 @@
   <meta name="viewport" content="width=device-width">
   <title>Home - Wan's Portfolio</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="scroll-snap.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  
-  <header class="homeHeader"><h1 id="headerText"></h1> 
+  <div class="parallax scroll-section"></div>
+  <nav id="sideNav">
+    <button id="closeNavcontainer" onclick="closeNav()"><div id="closeNavbutton"></div></button>
+    <li>
+      <ul><a href="index.html">Home</a></ul>
+      <ul><a href="#aboutMe">About</a></ul>
+      <ul><a href="experience.html">Experience</a></ul>
+      <ul><a href="mailto:wanyw128@gmail.com">Contacts</a></ul>
+    </li>
+  </nav>
+  <main id="main">
+    <div class="scroll-section">
+  <header class="homeHeader overlayScroll"><h1 id="headerText"></h1> 
     <button class="menuButton" onclick="openNav()">
       <div></div>
       <div></div>
       <div></div>
     </button>
   </header>
-  <nav id="sideNav">
-    <button id="closeNavcontainer" onclick="closeNav()"><div id="closeNavbutton"></div></button>
-    <li>
-      <ul><a href="index.html">Home</a></ul>
-      <ul><a href="#aboutMe">About</a></ul>
-      <ul><a href="projects.html">Projects</a></ul>
-      <ul><a href="mailto:wanyw128@gmail.com">Contacts</a></ul>
-    </li>
-  </nav>
-  <main id="main">
+    </div>
     
-    <div id="aboutMe">
+    <div class="scroll-section">
+    <div id="aboutMe" class="overlayScroll scroll-section">
       <h2 >About</h2>
       <p>
         Currently a student with leadership positions in non-profit organizations and competitive teams, I am a proud alumni of various community service and technology internships. Over the past two years, I have focused on my abilities in front- and back-end development, illustration and design, and science research. I look forward to pursuing my interests in activism and science by creating meaningful and accessible games, continuing my activities in non-profits, and conducting neuroscientific research.
       </p>
     </div>
 
+  </div>
+  </div>
+
+
+
+
+
+
+
+  
     <!--<section>
     <div class="homeConveyor">
       <h2>Interests</h2>
@@ -85,7 +100,15 @@
     
   </main>
 
-  <footer></footer>
+  <footer class="scroll-section">
+    <ul>
+      <li><a ref="#">Home</a></li>
+      <li><a ref="#aboutMe">About</a></li>
+      <li><a ref="experience.html">Experience</a></li>
+      <li><a ref="https://docs.google.com/document/d/1yLJv-VTNn6F3jv1-dV1T3vO1dScADY3nDuSXR1LYe0M/edit?usp=sharing">Resume</a></li>
+      <li><a ref="mailto:wanyw128@gmail.com">Contact</a></li>
+    </ul>
+  </footer>
   <script src="script.js"></script>
 
 </body>

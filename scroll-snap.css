@@ -1,0 +1,12 @@
+html{
+    scroll-snap-type: y mandatory;
+  }
+
+  .scroll-section{
+    scroll-snap-align: start;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
